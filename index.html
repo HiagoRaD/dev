@@ -1,13 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document HTML</title>
+    <title>Passaporte IMAX</title>
+    <!--bootstrap-->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!--style css-->
+    <link href="assets/styles/custom.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>HiagoDiniz.Dev</h1>
-  <p>Lotem ipsum dorem sit amen</p>
+    <header>
+        <div class="container-fluid head">
+            <div>
+                <img src="assets/images/Componente 1 – 1.png">
+            </div>
+        </div> 
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="assets/images/Ana Laura Beguer de Castro.png" class="img-perfil">
+                    </div>
+
+                    <div class="col-xs-12" style="padding-top: 20px;">
+                        <p class="campos">Nome</p>
+                        <p class="campos-dados">ana laura berguer de castro</p>
+
+                        <p class="campos">Instagram</p>
+                        <p class="campos-dados">@analaurabeguer</p>
+
+                        <p class="campos">Validade</p>
+                        <p class="campos-dados">agosto/2020</p>
+
+                        <p class="campos">Filmes assistidos</p>
+
+                        <p class="campos-dados datas-filmes">set/2019</p>
+                        <div class="col-xs-12 border-side">
+                            <ul class="lista-de-filmes" id="01">
+                                <li>it - capítulo 2</li>
+                                <li><input class="01 check" type="checkbox" id="scales" name="scales"></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 border-side">
+                            <p class="campos-dados datas-filmes">out/2019</p>
+                            <ul class="lista-de-filmes" id="02">
+                                <li>coringa</li>
+                                <li><input class="02 check" type="checkbox" id="scales" name="scales"></li>
+                            </ul>
+
+                            <ul class="lista-de-filmes" id="03">
+                                <li>projeto gemini</li>
+                                <li><input class="03 check" type="checkbox" id="scales" name="scales"></li>
+                            </ul>
+
+                            <ul class="lista-de-filmes" id="04">
+                                <li>ad astra rumo às estrelas</li>
+                                <li><input class="04 check" type="checkbox" id="scales" name="scales"></li>
+                            </ul>
+
+                            <ul class="lista-de-filmes" id="05">
+                                <li>malévola</li>
+                                <li><input class="05 check" type="checkbox" id="scales" name="scales"></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 border-side">
+                            <p class="campos-dados datas-filmes">nov/2019</p>
+                            <ul class="lista-de-filmes" id="06">
+                                <li>exterminador do futuro</li>
+                                <li><input class="06 check" type="checkbox" id="scales" name="scales"></li>
+                            </ul>
+                            <ul class="lista-de-filmes" id="07">
+                                <li>novo filme</li>
+                                <li><input class="07 check" type="checkbox" id="scales" name="scales"></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container-fluid foot">
+            <div>
+                <img src="assets/images/Componente 1 – 1.png" class="logo-footer">
+            </div>
+        </div>
+    </footer>
+    <!--jquey-->
+    <script src="assets/scripts/jquery-3.4.1.min.js"></script>
+    <!--botstrap js-->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("input").change(function() {
+                addOpacidade($(this).attr("class"));
+            });
+
+            function addOpacidade(classe) {
+                classe = classe.split(" ");
+                $("#" + classe[0]).change(function () {
+                    $("#" + classe[0]).addClass("opacidade");
+                    $("." + classe[0]).attr("disabled", "disable");
+                });
+            }       
+        });
+    </script>
 </body>
 </html>

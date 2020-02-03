@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500&display=swap');
+
+body{
+    background-color: #F3F0E9;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.opacidade {
+    opacity: 0.70;
+}
+.head {
+    background-color: black;
+    height: 71px;
+    padding: 18px;
+    text-align: center;
+}
+.container {
+    padding: 20px;
+    padding-top: 35px;
+    color: #3E3C3C;
+}
+
+.border-side {
+    padding-left: 0;
+    padding-right: 0;
+}
+.img-perfil {
+    width: 100%;
+}
+
+.campos {
+    font-weight: 400;
+    font-size: 16px;
+    border-bottom: 1px solid #F7B197;
+    margin-bottom: 0;
+}
+.campos-dados {
+    font-weight: 400;
+    color: #000000;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding-top: 0;
+}
+.datas-filmes {
+    padding-top: 20px;
+    border-bottom: 1px solid #F2D6CB;
+}
+.lista-de-filmes {
+    font-size: 16px;
+    font-weight: 300;
+    list-style: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #F2D6CB;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5px;
+}
+.check {
+    float: right;
+    padding-bottom: 15px;
+}
+/***************/
+input[type=checkbox] {
+    position: relative;
+	cursor: pointer;
+}
+input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    border: 2px solid rgb(88, 87, 87);
+    border-radius: 3px;
+    background-color: #F3F0E9;
+}
+input[type=checkbox]:checked:after {
+    text-align: center;
+    content: "\2713";
+    font-size: 13px;
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    border: 2px solid rgb(88, 87, 87);
+    border-radius: 3px;
+    background-color: rgb(88, 87, 87);
+}
+/***************/
+.lista-de-filmes li {
+    display: inline;
+    padding-bottom: 5px;
+}
+
+.foot {
+    background-color: rgb(24, 24, 24);
+    height: 48px;
+    padding: 12px;
+    padding-bottom: 2px !important;
+    text-align: center;
+}
+.logo-footer {
+    width: 67px;
+}
